@@ -56,5 +56,5 @@ io.on("connection", (socket) => {
     }
   });
 });
-const PORT = 3001 || process.env.PORT;
+const PORT = process.env.PORT ||3000  ;
 server.listen(PORT, () => console.log(`serevr running on port ${PORT}`));
